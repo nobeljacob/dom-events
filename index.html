@@ -43,11 +43,11 @@
         <div class="box1" ></div>
         <div class="box1"></div>
         <div class="box1"></div>
-        <button class="btn btn-primary mt-1" onclick="changeBackColor('green ', 'box1' )">Change background color</button>
+        <button class="btn btn-primary mt-1" onclick="changeBackColorForAllBox()">Change background color</button>
         <hr> 9. Can you now change all the box background color to blue on mouse click. All of them have class as box2 ?
-        <div class="box2" onclick="changeBackColor('blue','box2')"></div>
-        <div class="box2" onclick="changeBackColor('blue','box2')"></div>
-        <div class="box2" onclick="changeBackColor('blue','box2')"></div>
+        <div class="box2" onclick="changeBackColor()"></div>
+        <div class="box2" onclick="changeBackColor()"></div>
+        <div class="box2" onclick="changeBackColor()"></div>
         <hr> 10. Can you just make this textbox to accept only numbers ?
         <input type="text" id="input1" onkeypress="return numbersOnly(event)">
         <hr>
@@ -66,8 +66,8 @@
         <h3>DOM Events</h3>
 
         <p>1. Change the text entered in the input box to upper case when you move out of the input box.</p>
-        <input type="text" id="inputBox1" >
-        <input type="text" id="inputBox2" >
+        <input type="text" id="inputBox1" onfocusout="mouseup()" >
+        <input type="text" id="inputBox2" onfocusout="mouseup()" >
         <hr>
         <p>2. When you leave the input field, transform the input text to camel case.</p>
         <input type="text" id="inputBox3">

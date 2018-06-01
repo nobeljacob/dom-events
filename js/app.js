@@ -41,11 +41,11 @@ document.getElementsByClassName("box1").style.background="blue";
 
 }
 
-/*
-function changeBackColorForAllBox() {
-document.getElementsByClassName("box1").style.background="green";
-}
-*/
+
+
+
+
+
 function numbersOnly(event)
 
 {
@@ -90,4 +90,10 @@ function animatePara() {
     }
     }
 
+}
+function mouseup()
+{
+
+var str=document.getElementById("inputBox1");
+str.value=str.value.toUpperCase();
 }
