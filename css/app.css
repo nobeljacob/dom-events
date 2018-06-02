@@ -29,6 +29,11 @@
     width: 40px;
     border-width: 1px;
     border-style: solid;
-    border-color: black;
-    background-color: yellow;
+    border-color:red;
+    background-color: red;
   }
+
+  @keyframes myanimation {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}

@@ -1,4 +1,6 @@
 
+
+
 function identifyById() {
     console.log(document.getElementById('para1'));
     
@@ -42,8 +44,17 @@ document.getElementsByClassName("box1").style.background="blue";
 }
 
 
+function animated()
+{
+    
+    console.log("hi");
+    alert("hi");
+    document.getElementById('box5').style.position ="relative";
+    document.getElementById('box5').style.animation="myanimation"
+    document.getElementById('box5').style.animationDuration='2s';
 
 
+}
 
 
 function numbersOnly(event)
@@ -96,4 +107,32 @@ function mouseup()
 
 var str=document.getElementById("inputBox1");
 str.value=str.value.toUpperCase();
+}
+function mouseup2()
+{
+
+    var str=document.getElementById("inputBox2");
+    str.value=str.value.toUpperCase();
+
+
+}
+function CamelCase() {
+    var str=document.getElementById("inputBox3");
+    str.value=str.value.toLowerCase().replace(/(?:(^.)|(\s+.))/g, function(match) {
+        return match.charAt(match.length-1).toUpperCase();
+    });
+}
+          
+    
+function val() {
+    d = document.getElementById("browsers").value;
+    alert(d);
+}
+    
+
+function change()
+{
+
+
+    document.getElementById("final").style.background = "black";
 }
